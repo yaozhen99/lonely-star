@@ -1,19 +1,14 @@
 ---
-title: "Lonely Star"
-description: "VELAK09 星球的科幻史诗"
+title: 烬草平原
 ---
 
-# 欢迎来到 VELAK09
+# 欢迎来到烬草平原
 
-这是一颗充满生机的星球，辉脉网络在地下流动，烬草平原在暗橙色的 Vela 恒星光中起伏。
+这是一片在 Vela 恒星暗暖注视下的土地。
 
-这里没有孤独者，只有王者和旅人。
+## 第一卷：降临
 
----
-
-## 章节目录
-
-- [序曲：大模型的死锁]({{< ref "posts/prologue" >}})
-- [第一章：坠落]({{< ref "posts/chapter-01" >}})
-- [第二章：笛径]({{< ref "posts/chapter-02" >}})
-- [第三章：凝时]({{< ref "posts/chapter-03" >}})
+*   [序曲](posts/prologue.md)
+*   [第一章：坠落](posts/chapter-01.md)
+*   [第二章：笛径](posts/chapter-02.md)
+*   [第三章：凝时](posts/chapter-03.md)
