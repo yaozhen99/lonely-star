@@ -1,0 +1,8 @@
+baseURL = 'https://yaozhen99.github.io/lonely-star/'
+languageCode = 'zh-cn'
+title = 'Lonely Star - VELAK09 史诗'
+theme = 'ananke'
+
+[params]
+  description = 'VELAK09 星球的科幻史诗故事'
+  author = 'Lonely Star Team'
