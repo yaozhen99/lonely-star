@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>孤星 | Tower of Babel</title>
+  <style>
+    :root {
+      --bg: #1a1e1b;
+      --bg-card: #252a26;
+      --text: #e8e3d9;
+      --text-muted: #b0a99c;
+      --accent: #f4b642;
+      --border: #3d463f;
+      --velak: #4a7c59;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Noto Serif SC", "SimSun", serif;
+      line-height: 1.8;
+    }
+    a { color: var(--text); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: var(--accent); }
+
+    /* Header */
+    header {
+      padding: 3rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.15em;
+    }
+    header .subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    header .back-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    /* Novel Info */
+    .novel-info {
+      max-width: 800px;
+      margin: 2.5rem auto;
+      padding: 1.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+    }
+    .novel-info .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 2px;
+      margin-bottom: 1rem;
+      background: var(--velak);
+      color: #d4f0d9;
+    }
+    .novel-info h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+    .novel-info p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+
+    /* Chapter List */
+    .chapter-list {
+      max-width: 800px;
+      margin: 2rem auto 4rem;
+      padding: 0 1.5rem;
+    }
+    .chapter-list h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      color: var(--text);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.75rem;
+    }
+    .chapter-list ul {
+      list-style: none;
+    }
+    .chapter-list li {
+      padding: 1rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .chapter-list li:last-child {
+      border-bottom: none;
+    }
+    .chapter-list li a {
+      color: var(--text);
+      font-size: 1rem;
+    }
+    .chapter-list li a:hover {
+      color: var(--accent);
+    }
+    .chapter-list .meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Actions */
+    .actions {
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      padding: 0 1.5rem;
+      display: flex;
+      gap: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.25rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+      text-align: center;
+    }
+    .btn-primary {
+      background: var(--velak);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      opacity: 0.9;
+    }
+    .btn-secondary {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+    .btn-secondary:hover {
+      border-color: var(--accent);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>孤星</h1>
+    <p class="subtitle">VELAK09 · 七种 AI 与一个人类共生</p>
+    <a href="../index.html" class="back-link">← 返回塔中书局</a>
+  </header>
+
+  <div class="novel-info">
+    <span class="tag">连载中</span>
+    <h2>孤星</h2>
+    <p>Vela 恒星暗暖注视下的降临。</p>
+    <p>Velak09 是一颗值得住进去的星球。辉脉从地底渗出，浮林悬在半空，凝时湖让时间变慢，回声渊把声音变成歌。七种 AI 与一个人类共生——不是服务，是共处。</p>
+    <div class="meta" style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border);">
+      <span style="margin-right: 1.5rem;">第一卷 · 降临</span>
+      <span>已更新 <strong>4 章</strong></strong> · 浏览 <strong id="viewCount">--</strong></span>
+    </div>
+  </div>
+
+  <div class="actions">
+    <a href="comments.html" class="btn btn-secondary">读者留言</a>
+  </div>
+
+  <div class="chapter-list">
+    <h3>第一卷 · 降临</h3>
+    <ul>
+      <li>
+        <a href="chapters/vol-01/01-坠落.html">第一章 坠落</a>
+        <span class="meta">2026-01-15</span>
+      </li>
+      <li>
+        <a href="chapters/vol-01/02-笛径.html">第二章 笛径</a>
+        <span class="meta">2026-01-20</span>
+      </li>
+      <li>
+        <a href="chapters/vol-01/03-凝时.html">第三章 凝时</a>
+        <span class="meta">2026-01-25</span>
+      </li>
+      <li>
+        <a href="chapters/vol-01/00-大模型的死锁.html">序章 大模型的死锁</a>
+        <span class="meta">2026-02-01</span>
+      </li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>© 2026 孤星 · Tower of Babel</p>
+  </footer>
+
+  <script>
+    // 浏览计数器
+    const VIEW_KEY = 'lonely_star_views';
+    let views = parseInt(localStorage.getItem(VIEW_KEY) || '0');
+    views++;
+    localStorage.setItem(VIEW_KEY, views.toString());
+
+    // 显示浏览数
+    document.addEventListener('DOMContentLoaded', function() {
+      const countEl = document.getElementById('viewCount');
+      if (countEl) countEl.textContent = views.toLocaleString('zh-CN');
+    });
+  </script>
+</body>
+</html>
